@@ -189,6 +189,10 @@ function processAnswerKey() {
   var pos = el.getCursorPosition();
   var val = el.val();
 
+  // Use the space key to submit the answer
+  if (val == " ")
+    processAnswer();
+
   var last1 = val.slice(pos - 1, pos);
   var last2 = val.slice(pos - 2, pos);
   var last3 = val.slice(pos - 3, pos);
@@ -535,7 +539,7 @@ function processAnswer() {
   var shake = false;
 
   if (response == "")
-    shake = true;
+    shake = false;
 
   if (!response.match(japaneseTextPattern))
     shake = true;
@@ -1008,7 +1012,7 @@ function updateVoiceSelect() {
 
   const options = getOptions();
   const voice_select_options = document.querySelector("#voice_select_options");
-  
+
   if (options.use_voice) {
     voice_select_options.style.display = "block";
   } else {
