@@ -4,7 +4,6 @@
 
 var words = {
 
-  "ある":       { "group": "godan",        "dictionary": "在[あ]る", },
   "会う":       { "group": "godan",        "dictionary": "会[あ]う", },
   "住む":       { "group": "godan",        "dictionary": "住[す]む", },
   "作る":       { "group": "godan",        "dictionary": "作[つく]る", },
