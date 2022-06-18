@@ -4,70 +4,156 @@
 
 var words = {
 
-  "走る":       { "group": "godan",        "dictionary": "走[はし]る", },
-  "死ぬ":       { "group": "godan",        "dictionary": "死[し]ぬ", },
-  "上る":       { "group": "godan",        "dictionary": "上[のぼ]る", },
-  "聞く":       { "group": "godan",        "dictionary": "聞[き]く", },
-  "書く":       { "group": "godan",        "dictionary": "書[か]く", },
-  "消す":       { "group": "godan",        "dictionary": "消[け]す", },
-  "遊ぶ":       { "group": "godan",        "dictionary": "遊[あそ]ぶ", },
-  "学ぶ":       { "group": "godan",        "dictionary": "学[まな]ぶ", },
-  "喜ぶ":       { "group": "godan",        "dictionary": "喜[よろこ]ぶ", },
-  "泳ぐ":       { "group": "godan",        "dictionary": "泳[およ]ぐ", },
-  "注ぐ":       { "group": "godan",        "dictionary": "注[そそ]ぐ", },
-  "急ぐ":       { "group": "godan",        "dictionary": "急[いそ]ぐ", },
-  "立つ":       { "group": "godan",        "dictionary": "立[た]つ", },
-  "持つ":       { "group": "godan",        "dictionary": "持[も]つ", },
-  "打つ":       { "group": "godan",        "dictionary": "打[う]つ", },
-  "飲む":       { "group": "godan",        "dictionary": "飲[の]む", },
+  "ある":       { "group": "godan",        "dictionary": "在[あ]る", },
+  "会う":       { "group": "godan",        "dictionary": "会[あ]う", },
+  "住む":       { "group": "godan",        "dictionary": "住[す]む", },
   "作る":       { "group": "godan",        "dictionary": "作[つく]る", },
-  "買い戻す":   { "group": "godan",        "dictionary": "買[か]い戻[もど]す", },
-  "読む":       { "group": "godan",        "dictionary": "読[よ]む", },
-  "思う":       { "group": "godan",        "dictionary": "思[おも]う", },
+  "使う":       { "group": "godan",        "dictionary": "使[つか]う", },
+  "働く":       { "group": "godan",        "dictionary": "働[はたら]く", },
+  "入る":       { "group": "godan",        "dictionary": "入[はい]る", },
+  "出す":       { "group": "godan",        "dictionary": "出[だ]す", },
+  "切る":       { "group": "godan",        "dictionary": "切[き]る", },
+  "参る":       { "group": "godan",        "dictionary": "参[まい]る", },
+  "嘲る":       { "group": "godan",        "dictionary": "嘲[あざけ]る", },
+  "売る":       { "group": "godan",        "dictionary": "売[う]る", },
+  "帰る":       { "group": "godan",        "dictionary": "帰[かえ]る", },
   "座る":       { "group": "godan",        "dictionary": "座[すわ]る", },
-  "休む":       { "group": "godan",        "dictionary": "休[やす]む", },
-  "足す":       { "group": "godan",        "dictionary": "足[た]す", },
+  "待つ":       { "group": "godan",        "dictionary": "待[ま]つ", },
+  "怒る":       { "group": "godan",        "dictionary": "怒[おこ]る", },
+  "思う":       { "group": "godan",        "dictionary": "思[おも]う", },
+  "成る":       { "group": "godan",        "dictionary": "成[な]る", },
+  "抜く":       { "group": "godan",        "dictionary": "抜[ぬ]く", },
+  "持つ":       { "group": "godan",        "dictionary": "持[も]つ", },
+  "捻る":       { "group": "godan",        "dictionary": "捻[ひね]る", },
+  "握る":       { "group": "godan",        "dictionary": "握[にぎ]る", },
+  "撮る":       { "group": "godan",        "dictionary": "撮[と]る", },
+  "書く":       { "group": "godan",        "dictionary": "書[か]く", },
   "歌う":       { "group": "godan",        "dictionary": "歌[うた]う", },
+  "歩く":       { "group": "godan",        "dictionary": "歩[ある]く", },
+  "死ぬ":       { "group": "godan",        "dictionary": "死[し]ぬ", },
+  "泳ぐ":       { "group": "godan",        "dictionary": "泳[およ]ぐ", },
+  "洗う":       { "group": "godan",        "dictionary": "洗[あら]う", },
+  "消す":       { "group": "godan",        "dictionary": "消[け]す", },
+  "減る":       { "group": "godan",        "dictionary": "減[へ]る", },
+  "滑る":       { "group": "godan",        "dictionary": "滑[すべ]る", },
+  "焦る":       { "group": "godan",        "dictionary": "焦[あせ]る", },
+  "盗む":       { "group": "godan",        "dictionary": "盗[ぬす]む", },
+  "着く":       { "group": "godan",        "dictionary": "着[つ]く", },
+  "知る":       { "group": "godan",        "dictionary": "知[し]る", },
+  "練る":       { "group": "godan",        "dictionary": "練[ね]る", },
+  "罵る":       { "group": "godan",        "dictionary": "罵[ののし]る", },
+  "習う":       { "group": "godan",        "dictionary": "習[なら]う", },
+  "翻る":       { "group": "godan",        "dictionary": "翻[ひるがえ]る", },
+  "聞く":       { "group": "godan",        "dictionary": "聞[き]く", },
+  "蘇る":       { "group": "godan",        "dictionary": "蘇[よみがえ]る", },
+  "行く":       { "group": "godan",        "dictionary": "行[い]く", },
+  "要る":       { "group": "godan",        "dictionary": "要[い]る", },
+  "覆る":       { "group": "godan",        "dictionary": "覆[くつがえ]る", },
+  "言う":       { "group": "godan",        "dictionary": "言[い]う", },
+  "話す":       { "group": "godan",        "dictionary": "話[はな]す", },
+  "読む":       { "group": "godan",        "dictionary": "読[よ]む", },
   "買う":       { "group": "godan",        "dictionary": "買[か]う", },
+  "貸す":       { "group": "godan",        "dictionary": "貸[か]す", },
+  "走る":       { "group": "godan",        "dictionary": "走[はし]る", },
+  "蹴る":       { "group": "godan",        "dictionary": "蹴[け]る", },
+  "遊ぶ":       { "group": "godan",        "dictionary": "遊[あそ]ぶ", },
+  "遮る":       { "group": "godan",        "dictionary": "遮[さえぎ]る", },
+  "選ぶ":       { "group": "godan",        "dictionary": "選[えら]ぶ", },
+  "開く":       { "group": "godan",        "dictionary": "開[ひら]く", },
+  "降る":       { "group": "godan",        "dictionary": "降[ふ]る", },
+  "限る":       { "group": "godan",        "dictionary": "限[かぎ]る", },
+  "飲む":       { "group": "godan",        "dictionary": "飲[の]む", },
+  "交じる":     { "group": "godan",        "dictionary": "交[ま]じる", },
+  "分かる":     { "group": "godan",        "dictionary": "分[わ]かる", },
+  "向かう":     { "group": "godan",        "dictionary": "向[む]かう", },
+  "変わる":     { "group": "godan",        "dictionary": "変[か]わる", },
+  "曲がる":     { "group": "godan",        "dictionary": "曲[ま]がる", },
+  "楽しむ":     { "group": "godan",        "dictionary": "楽[たの]しむ", },
+  "泊まる":     { "group": "godan",        "dictionary": "泊[と]まる", },
+  "滅入る":     { "group": "godan",        "dictionary": "滅入[めい]る", },
+  "終わる":     { "group": "godan",        "dictionary": "終[お]わる", },
+  "閉まる":     { "group": "godan",        "dictionary": "閉[し]まる", },
+  "頑張る":     { "group": "godan",        "dictionary": "頑張[がんば]る", },
+  "しゃべる":   { "group": "godan",        "dictionary": "喋[しゃべ]る", },
+  "付き合う":   { "group": "godan",        "dictionary": "付[つ]き合[あ]う", },
+  "引っ越す":   { "group": "godan",        "dictionary": "引[ひ]っ越[こ]す", },
+  "見つかる":   { "group": "godan",        "dictionary": "見[み]つかる", },
+  "言い出す":   { "group": "godan",        "dictionary": "言[い]い出[だ]す", },
+  "走り出す":   { "group": "godan",        "dictionary": "走[はし]り出[だ]す", },
+  "病気になる": { "group": "godan",        "dictionary": "病気[びょうき]になる", },
 
-  "上げる":     { "group": "ichidan",      "dictionary": "上[あ]げる", },
-  "着る":       { "group": "ichidan",      "dictionary": "着[き]る", },
-  "育てる":     { "group": "ichidan",      "dictionary": "育[そだ]てる", },
-  "褒める":     { "group": "ichidan",      "dictionary": "褒[ほ]める", },
+  "いる":       { "group": "ichidan",      "dictionary": "居[い]る", },
   "出る":       { "group": "ichidan",      "dictionary": "出[で]る", },
-  "食べる":     { "group": "ichidan",      "dictionary": "食[た]べる", },
+  "寝る":       { "group": "ichidan",      "dictionary": "寝[ね]る", },
+  "着る":       { "group": "ichidan",      "dictionary": "着[き]る", },
+  "見る":       { "group": "ichidan",      "dictionary": "見[み]る", },
+  "くれる":     { "group": "ichidan",      "dictionary": "呉[く]れる", },
+  "付ける":     { "group": "ichidan",      "dictionary": "付[つ]ける", },
+  "入れる":     { "group": "ichidan",      "dictionary": "入[い]れる", },
+  "加える":     { "group": "ichidan",      "dictionary": "加[くわ]える", },
+  "増える":     { "group": "ichidan",      "dictionary": "増[ふ]える", },
+  "忘れる":     { "group": "ichidan",      "dictionary": "忘[わす]れる", },
+  "抜ける":     { "group": "ichidan",      "dictionary": "抜[ぬ]ける", },
+  "捨てる":     { "group": "ichidan",      "dictionary": "捨[す]てる", },
+  "教える":     { "group": "ichidan",      "dictionary": "教[おし]える", },
+  "替える":     { "group": "ichidan",      "dictionary": "替[か]える", },
+  "消える":     { "group": "ichidan",      "dictionary": "消[き]える", },
+  "痩せる":     { "group": "ichidan",      "dictionary": "痩[や]せる", },
+  "答える":     { "group": "ichidan",      "dictionary": "答[こた]える", },
+  "考える":     { "group": "ichidan",      "dictionary": "考[かんが]える", },
+  "落ちる":     { "group": "ichidan",      "dictionary": "落[お]ちる", },
   "起きる":     { "group": "ichidan",      "dictionary": "起[お]きる", },
-  "買い換える": { "group": "ichidan",      "dictionary": "買[か]い換[か]える", },
-  "買い与える": { "group": "ichidan",      "dictionary": "買[か]い与[あた]える", },
+  "辞める":     { "group": "ichidan",      "dictionary": "辞[や]める", },
+  "遅れる":     { "group": "ichidan",      "dictionary": "遅[おく]れる", },
+  "閉める":     { "group": "ichidan",      "dictionary": "閉[し]める", },
+  "開ける":     { "group": "ichidan",      "dictionary": "開[あ]ける", },
+  "食べる":     { "group": "ichidan",      "dictionary": "食[た]べる", },
+  "着替える":   { "group": "ichidan",      "dictionary": "着替[きが]える", },
+  "付け加える": { "group": "ichidan",      "dictionary": "付[つ]け加[くわ]える", },
 
   "行く":       { "group": "iku",          "dictionary": "行[い]く", },
 
   "する":       { "group": "suru",         "dictionary": "する", },
   "勉強する":   { "group": "suru",         "dictionary": "勉[べん]強[きょう]する", },
   "電話する":   { "group": "suru",         "dictionary": "電[でん]話[わ]する", },
-  "開発する":   { "group": "suru",         "dictionary": "開[かい]発[はつ]する", },
-  "計算する":   { "group": "suru",         "dictionary": "計[けい]算[さん]する", },
 
   "来る":       { "group": "kuru",         "dictionary": "来[く]る", },
 
+  "早い":       { "group": "i-adjective",  "dictionary": "早[はや]い", },
+  "暑い":       { "group": "i-adjective",  "dictionary": "暑[あつ]い", },
+  "狭い":       { "group": "i-adjective",  "dictionary": "狭[せま]い", },
+  "白い":       { "group": "i-adjective",  "dictionary": "白[しろ]い", },
+  "赤い":       { "group": "i-adjective",  "dictionary": "赤[あか]い", },
+  "辛い":       { "group": "i-adjective",  "dictionary": "辛[から]い", },
   "高い":       { "group": "i-adjective",  "dictionary": "高[たか]い", },
-  "面白い":     { "group": "i-adjective",  "dictionary": "面[おも]白[しろ]い", },
-  "暗い":       { "group": "i-adjective",  "dictionary": "暗[くら]い", },
-  "暖かい":     { "group": "i-adjective",  "dictionary": "暖[あたた]かい", },
-  "華々しい":   { "group": "i-adjective",  "dictionary": "華[はな]々[ばな]しい", },
-  "怖い":       { "group": "i-adjective",  "dictionary": "怖[こわ]い", },
-  "硬い":       { "group": "i-adjective",  "dictionary": "硬[かた]い", },
+  "優しい":     { "group": "i-adjective",  "dictionary": "優[やさ]しい", },
+  "大きい":     { "group": "i-adjective",  "dictionary": "大[おお]きい", },
+  "小さい":     { "group": "i-adjective",  "dictionary": "小[ちい]さい", },
+  "忙しい":     { "group": "i-adjective",  "dictionary": "忙[いそが]しい", },
+  "楽しい":     { "group": "i-adjective",  "dictionary": "楽[たの]しい", },
+  "欲しい":     { "group": "i-adjective",  "dictionary": "欲[ほ]しい", },
+  "涼しい":     { "group": "i-adjective",  "dictionary": "涼[すず]しい", },
+  "難しい":     { "group": "i-adjective",  "dictionary": "難[むずか]しい", },
+  "面白い":     { "group": "i-adjective",  "dictionary": "面白[おもしろ]い", },
+  "かわいい":   { "group": "i-adjective",  "dictionary": "可愛[かわい]い", },
+  "美味しい":   { "group": "i-adjective",  "dictionary": "美味[おい]しい", },
+  "かっこいい": { "group": "i-adjective",  "dictionary": "格好[かっこ]いい", },
 
   "いい":       { "group": "ii",           "dictionary": "いい", },
 
-  "有名":       { "group": "na-adjective", "dictionary": "有[ゆう]名[めい]だ", },
-  "好き":       { "group": "na-adjective", "dictionary": "好[す]きだ", },
-  "元気":       { "group": "na-adjective", "dictionary": "元[げん]気[き]だ", },
-  "意地悪":     { "group": "na-adjective", "dictionary": "意[い]地[じ]悪[わる]だ", },
-  "静":         { "group": "na-adjective", "dictionary": "静[しず]かだ", },
-  "便利":       { "group": "na-adjective", "dictionary": "便[べん]利[り]だ", },
-  "上手":       { "group": "na-adjective", "dictionary": "上[じょう]手[ず]だ", },
-  "幸い":       { "group": "na-adjective", "dictionary": "幸[さいわ]いだ", },
+  "丁寧":       { "group": "na-adjective", "dictionary": "丁寧[ていねい]", },
+  "大変":       { "group": "na-adjective", "dictionary": "大変[たいへん]", },
+  "奇麗":       { "group": "na-adjective", "dictionary": "奇麗[きれい]", },
+  "嫌い":       { "group": "na-adjective", "dictionary": "嫌[きら]い", },
+  "立派":       { "group": "na-adjective", "dictionary": "立派[りっぱ]", },
+  "簡単":       { "group": "na-adjective", "dictionary": "簡単[かんたん]", },
+  "色々":       { "group": "na-adjective", "dictionary": "色々[いろいろ]", },
+  "一般的":     { "group": "na-adjective", "dictionary": "一般的[いっぱんてき]", },
+  "大丈夫":     { "group": "na-adjective", "dictionary": "大丈夫[だいじょうぶ]", },
+  "穏やか":     { "group": "na-adjective", "dictionary": "穏[おだ]やか", },
+  "魅力的":     { "group": "na-adjective", "dictionary": "魅力的[みりょくてき]", },
+  "いっぱい":   { "group": "na-adjective", "dictionary": "一杯[いっぱい]", },
+  "一生懸命":   { "group": "na-adjective", "dictionary": "一生懸命[いっしょうけんめい]", },
 };
 
 var rules = {
@@ -75,7 +161,7 @@ var rules = {
   "godan": {
 
     "negative": {
-    
+
       forms: [
         { "before": "る", "after": "らない" },
         { "before": "つ", "after": "たない" },
@@ -152,7 +238,7 @@ var rules = {
     },
 
     "polite past": {
-      
+
       forms: [
         { "before": "る", "after": "りました" },
         { "before": "つ", "after": "ちました" },
@@ -167,7 +253,7 @@ var rules = {
     },
 
     "polite past negative": {
-      
+
       forms: [
         { "before": "る", "after": "りませんでした" },
         { "before": "つ", "after": "ちませんでした" },
@@ -182,7 +268,7 @@ var rules = {
     },
 
     "te-form": {
-      
+
       forms: [
         { "before": "る", "after": "って" },
         { "before": "つ", "after": "って" },
@@ -199,7 +285,7 @@ var rules = {
     },
 
     "te-form negative": {
-      
+
       forms: [
         { "before": "る", "after": "らなくて"}, { "before": "る", "after": "らないで"},
         { "before": "つ", "after": "たなくて"}, { "before": "つ", "after": "たないで"},
@@ -214,7 +300,7 @@ var rules = {
     },
 
     "potential": {
-      
+
       forms: [
         { "before": "る", "after": "れる" },
         { "before": "つ", "after": "てる" },
@@ -229,7 +315,7 @@ var rules = {
     },
 
     "potential negative": {
-      
+
       forms: [
         { "before": "る", "after": "れない" },
         { "before": "つ", "after": "てない" },
@@ -244,7 +330,7 @@ var rules = {
     },
 
     "polite potential": {
-      
+
       forms: [
         { "before": "る", "after": "れます" },
         { "before": "つ", "after": "てます" },
@@ -259,7 +345,7 @@ var rules = {
     },
 
     "polite potential negative": {
-      
+
       forms: [
         { "before": "る", "after": "れません" },
         { "before": "つ", "after": "てません" },
@@ -274,7 +360,7 @@ var rules = {
     },
 
     "passive": {
-      
+
       forms: [
         { "before": "る", "after": "られる" },
         { "before": "つ", "after": "たれる" },
@@ -289,7 +375,7 @@ var rules = {
     },
 
     "passive negative": {
-      
+
       forms: [
         { "before": "る", "after": "られない" },
         { "before": "つ", "after": "たれない" },
@@ -304,7 +390,7 @@ var rules = {
     },
 
     "passive past": {
-      
+
       forms: [
         { "before": "る", "after": "られた" },
         { "before": "つ", "after": "たれた" },
@@ -319,7 +405,7 @@ var rules = {
     },
 
     "passive past negative": {
-      
+
       forms: [
         { "before": "る", "after": "られなかった" },
         { "before": "つ", "after": "たれなかった" },
@@ -334,7 +420,7 @@ var rules = {
     },
 
     "passive te-form": {
-      
+
       forms: [
         { "before": "る", "after": "られて" },
         { "before": "つ", "after": "たれて" },
@@ -349,7 +435,7 @@ var rules = {
     },
 
     "polite passive": {
-      
+
       forms: [
         { "before": "る", "after": "られます" },
         { "before": "つ", "after": "たれます" },
@@ -364,7 +450,7 @@ var rules = {
     },
 
     "polite passive negative": {
-      
+
       forms: [
         { "before": "る", "after": "られません" },
         { "before": "つ", "after": "たれません" },
@@ -379,7 +465,7 @@ var rules = {
     },
 
     "polite passive past": {
-      
+
       forms: [
         { "before": "る", "after": "られました" },
         { "before": "つ", "after": "たれました" },
@@ -394,7 +480,7 @@ var rules = {
     },
 
     "polite passive past negative": {
-      
+
       forms: [
         { "before": "る", "after": "られませんでした" },
         { "before": "つ", "after": "たれませんでした" },
@@ -409,7 +495,7 @@ var rules = {
     },
 
     "causative": {
-      
+
       forms: [
         { "before": "る", "after": "らせる" },
         { "before": "つ", "after": "たせる" },
@@ -424,7 +510,7 @@ var rules = {
     },
 
     "causative negative": {
-      
+
       forms: [
         { "before": "る", "after": "らせない" },
         { "before": "つ", "after": "たせない" },
@@ -439,7 +525,7 @@ var rules = {
     },
 
     "causative past": {
-      
+
       forms: [
         { "before": "る", "after": "らせた" },
         { "before": "つ", "after": "たせた" },
@@ -454,7 +540,7 @@ var rules = {
     },
 
     "causative past negative": {
-      
+
       forms: [
         { "before": "る", "after": "らせなかった" },
         { "before": "つ", "after": "たせなかった" },
@@ -469,7 +555,7 @@ var rules = {
     },
 
     "causative passive": {
-      
+
       forms: [
         { "before": "る", "after": "らせられる" },
         { "before": "つ", "after": "たせられる" },
@@ -484,7 +570,7 @@ var rules = {
     },
 
     "causative passive negative": {
-      
+
       forms: [
         { "before": "る", "after": "らせられない" },
         { "before": "つ", "after": "たせられない" },
@@ -499,7 +585,7 @@ var rules = {
     },
 
     "causative passive past": {
-      
+
       forms: [
         { "before": "る", "after": "らせられた" },
         { "before": "つ", "after": "たせられた" },
@@ -514,7 +600,7 @@ var rules = {
     },
 
     "causative passive negative past": {
-      
+
       forms: [
         { "before": "る", "after": "らせられなかった" },
         { "before": "つ", "after": "たせられなかった" },
@@ -529,7 +615,7 @@ var rules = {
     },
 
     "imperative": {
-      
+
       forms: [
         { "before": "る", "after": "れ" },
         { "before": "つ", "after": "て" },
@@ -544,7 +630,7 @@ var rules = {
     },
 
     "imperative negative": {
-      
+
       forms: [
         { "before": "る", "after": "るな" },
         { "before": "つ", "after": "つな" },
@@ -559,7 +645,7 @@ var rules = {
     },
 
     "progressive": {
-      
+
       forms: [
         { "before": "る", "after": "っている" },
         { "before": "つ", "after": "っている" },
@@ -576,7 +662,7 @@ var rules = {
     },
 
     "progressive negative": {
-      
+
       forms: [
         { "before": "る", "after": "っていない" },
         { "before": "つ", "after": "っていない" },
@@ -593,7 +679,7 @@ var rules = {
     },
 
     "polite progressive": {
-      
+
       forms: [
         { "before": "る", "after": "っています" },
         { "before": "つ", "after": "っています" },
@@ -610,7 +696,7 @@ var rules = {
     },
 
     "polite progressive negative": {
-      
+
       forms: [
         { "before": "る", "after": "っていません" },
         { "before": "つ", "after": "っていません" },
@@ -627,7 +713,7 @@ var rules = {
     },
 
     "progressive past": {
-      
+
       forms: [
         { "before": "る", "after": "っていた" },
         { "before": "つ", "after": "っていた" },
@@ -644,7 +730,7 @@ var rules = {
     },
 
     "progressive past negative": {
-      
+
       forms: [
         { "before": "る", "after": "っていなかった" },
         { "before": "つ", "after": "っていなかった" },
@@ -661,7 +747,7 @@ var rules = {
     },
 
     "polite progressive past": {
-      
+
       forms: [
         { "before": "る", "after": "っていました" },
         { "before": "つ", "after": "っていました" },
@@ -678,7 +764,7 @@ var rules = {
     },
 
     "polite progressive past negative": {
-      
+
       forms: [
         { "before": "る", "after": "っていませんでした" },
         { "before": "つ", "after": "っていませんでした" },
@@ -695,7 +781,7 @@ var rules = {
     },
 
     "desire": {
-      
+
       forms: [
         { "before": "る", "after": "りたい" },
         { "before": "つ", "after": "ちたい" },
@@ -710,7 +796,7 @@ var rules = {
     },
 
     "desire negative": {
-      
+
       forms: [
         { "before": "る", "after": "りたくない" },
         { "before": "つ", "after": "ちたくない" },
@@ -725,7 +811,7 @@ var rules = {
     },
 
     "desire past": {
-      
+
       forms: [
         { "before": "る", "after": "りたかった" },
         { "before": "つ", "after": "ちたかった" },
@@ -740,7 +826,7 @@ var rules = {
     },
 
     "desire past negative": {
-      
+
       forms: [
         { "before": "る", "after": "りたくなかった" },
         { "before": "つ", "after": "ちたくなかった" },
@@ -753,9 +839,9 @@ var rules = {
         { "before": "む", "after": "みたくなかった" },
       ],
     },
-    
+
     "desire te-form": {
-      
+
       forms: [
         { "before": "る", "after": "りたくて" },
         { "before": "つ", "after": "ちたくて" },
@@ -768,9 +854,9 @@ var rules = {
         { "before": "む", "after": "みたくて" },
       ],
     },
-    
+
     "desire te-form negative": {
-      
+
       forms: [
         { "before": "る", "after": "りたくなくて" },
         { "before": "つ", "after": "ちたくなくて" },
@@ -785,7 +871,7 @@ var rules = {
     },
 
     "desire polite": {
-      
+
       forms: [
         { "before": "る", "after": "りたいです" },
         { "before": "つ", "after": "ちたいです" },
@@ -800,7 +886,7 @@ var rules = {
     },
 
     "desire polite negative": {
-      
+
       forms: [
         { "before": "る", "after": "りたくないです" },
         { "before": "つ", "after": "ちたくないです" },
@@ -815,7 +901,7 @@ var rules = {
     },
 
     "desire polite past": {
-      
+
       forms: [
         { "before": "る", "after": "りたかったです" },
         { "before": "つ", "after": "ちたかったです" },
@@ -830,7 +916,7 @@ var rules = {
     },
 
     "desire polite past negative": {
-      
+
       forms: [
         { "before": "る", "after": "りたくなかったです" },
         { "before": "つ", "after": "ちたくなかったです" },
@@ -845,7 +931,7 @@ var rules = {
     },
 
     "volitional": {
-      
+
       forms: [
         { "before": "る", "after": "ろう" },
         { "before": "つ", "after": "とう" },
@@ -1168,7 +1254,7 @@ function calculateConjugations(word, conjugation) {
 function calculateAllConjugations() {
 
   Object.keys(words).forEach(function (word) {
-    
+
     words[word].conjugations = { "dictionary": { forms: [words[word].dictionary] } };
 
     var group = words[word].group;
