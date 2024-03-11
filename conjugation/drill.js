@@ -576,6 +576,12 @@ function processAnswer() {
     $('#message #correction').html("The correct answer was " + commaList(questionData.answerWithFurigana, "or"));
   }
 
+
+  var translation = "Meaning: " + words[questionData.entry].translation
+
+  $('#translation').show();
+  $('#translation').prop("innerText", translation);
+  
   $('#inputArea').hide();
   $('#proceed').show();
   $('#explanation').hide();
