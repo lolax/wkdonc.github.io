@@ -332,6 +332,7 @@ function validQuestion(entry, forms, transformation, options) {
 }
 
 function generateQuestion() {
+  $('#translation').hide();
 
   var questionText = {
     "affirmative": "<span class='first'>make</span> the following <span class='emphasis'>affirmative</span>",
